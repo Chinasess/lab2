@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_5DataSet1" targetNamespace="http://tempuri.org/_5DataSet1.xsd" xmlns:mstns="http://tempuri.org/_5DataSet1.xsd" xmlns="http://tempuri.org/_5DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_5ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_5ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Test_App.Properties.Settings.GlobalReference.Default._5ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="просмотртTableAdapter" GeneratorDataComponentClassName="просмотртTableAdapter" Name="просмотрт" UserDataComponentName="просмотртTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_5ConnectionString (Settings)" DbObjectName="[5].dbo.просмотрт" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Фамилия, Имя, Название, Длительность, Обозначение, Название_жанра, Название_страны FROM dbo.просмотрт</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Название" DataSetColumn="Название" />
+              <Mapping SourceColumn="Длительность" DataSetColumn="Длительность" />
+              <Mapping SourceColumn="Обозначение" DataSetColumn="Обозначение" />
+              <Mapping SourceColumn="Название_жанра" DataSetColumn="Название_жанра" />
+              <Mapping SourceColumn="Название_страны" DataSetColumn="Название_страны" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_5DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="_5DataSet1" msprop:Generator_DataSetName="_5DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="просмотрт" msprop:Generator_RowEvHandlerName="просмотртRowChangeEventHandler" msprop:Generator_RowDeletedName="просмотртRowDeleted" msprop:Generator_RowDeletingName="просмотртRowDeleting" msprop:Generator_RowEvArgName="просмотртRowChangeEvent" msprop:Generator_TablePropName="просмотрт" msprop:Generator_RowChangedName="просмотртRowChanged" msprop:Generator_RowChangingName="просмотртRowChanging" msprop:Generator_TableClassName="просмотртDataTable" msprop:Generator_RowClassName="просмотртRow" msprop:Generator_TableVarName="tableпросмотрт" msprop:Generator_UserTableName="просмотрт">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Фамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_UserColumnName="Фамилия">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_UserColumnName="Имя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_UserColumnName="Название">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Длительность" msprop:Generator_ColumnPropNameInRow="Длительность" msprop:Generator_ColumnPropNameInTable="ДлительностьColumn" msprop:Generator_ColumnVarNameInTable="columnДлительность" msprop:Generator_UserColumnName="Длительность" type="xs:int" />
+              <xs:element name="Обозначение" msprop:Generator_ColumnPropNameInRow="Обозначение" msprop:Generator_ColumnPropNameInTable="ОбозначениеColumn" msprop:Generator_ColumnVarNameInTable="columnОбозначение" msprop:Generator_UserColumnName="Обозначение">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_жанра" msprop:Generator_ColumnPropNameInRow="Название_жанра" msprop:Generator_ColumnPropNameInTable="Название_жанраColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_жанра" msprop:Generator_UserColumnName="Название_жанра">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_страны" msprop:Generator_ColumnPropNameInRow="Название_страны" msprop:Generator_ColumnPropNameInTable="Название_страныColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_страны" msprop:Generator_UserColumnName="Название_страны">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
